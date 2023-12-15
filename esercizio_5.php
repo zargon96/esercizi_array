@@ -7,27 +7,28 @@
 </head>
 <body>
     <?php
-        
         $parole = [
             'casa',
             'albero',
             'computer',
             'libro',
-            'contemporaniamente',
+            'contemporaneamente',
         ];
 
+        // Trova la lunghezza massima tra le lunghezze delle parole
+        $lunghezza_massima = max(array_map('strlen', $parole));
 
-        // Trova la lunghezza massima delle parole
-        $lunghezzaMassima = max($parole);
-
-        // trova le parole con la lunghezza massima
-        $paroleLunghe = array_keys($parole, $lunghezzaMassima);
+        // Trova le parole con la lunghezza massima
+        $paroleLunghe = array_filter($parole, function ($parola) use ($lunghezza_massima) {
+            return strlen($parola) === $lunghezza_massima;
+        });
 
         echo "Parole più lunghe:\n";
         foreach ($paroleLunghe as $parola) {
             echo '<pre>', "$parola\n";
         }
     ?>
+
 
 
 </body>
