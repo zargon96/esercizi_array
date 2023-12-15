@@ -3,18 +3,19 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>esercizio_4</title>
+   <title>esercizio_5</title>
 </head>
 <body>
     <?php
         
         $parole = [
-            'casa' => 4,
-            'albero' => 6,
-            'computer' => 8,
-            'libro' => 5,
-            'contemporaniamente' => 18,
+            'casa',
+            'albero',
+            'computer',
+            'libro',
+            'contemporaniamente',
         ];
+
 
         // Trova la lunghezza massima delle parole
         $lunghezzaMassima = max($parole);

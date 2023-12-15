@@ -13,9 +13,9 @@
       'età' => 20,
    ];
    echo "Dati personali:\n";
-   echo "Nome: " . $dati_studente['nome'] . "\n";
-   echo "Cognome: " . $dati_studente['cognome'] . "\n";
-   echo "Età: " . $dati_studente['età'] . " anni\n";
+    echo '<pre>', "Nome: " . $dati_studente['nome'] . "\n";
+    echo '<pre>', "Cognome: " . $dati_studente['cognome'] . "\n";
+    echo '<pre>', "Età: " . $dati_studente['età'] . " anni\n";
    ?>
 </body>
 </html>

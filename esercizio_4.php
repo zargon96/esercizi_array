@@ -7,7 +7,6 @@
 </head>
 <body>
     <?php
-    
         $temperatureGiornaliere = [
             'Lunedì' => 25,
             'Martedì' => 28,
@@ -15,11 +14,17 @@
             'Giovedì' => 30,
             'Venerdì' => 27,
         ];
-        
+
         $temperaturaMassima = max($temperatureGiornaliere);
 
-        echo '<pre>', "Temperatura massima registrata: $temperaturaMassima °";
+        // Trova i giorni con la temperatura massima
+        $giorniTemperaturaMassima = array_keys($temperatureGiornaliere, $temperaturaMassima);
+
+        echo "Temperatura massima registrata: $temperaturaMassima °, ";
+        echo implode(', ', $giorniTemperaturaMassima) . "\n";
     ?>
+
+
 
 </body>
 </html>
