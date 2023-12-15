@@ -7,15 +7,15 @@
 </head>
 <body>
    <?php
-   $dati_studenti = [
+   $dati_studente = [
       'nome' => 'mario',
       'cognome' => 'rossi',
       'età' => 20,
    ];
    echo "Dati personali:\n";
-   echo "Nome: " . $dati_studenti['nome'] . "\n";
-   echo "Cognome: " . $dati_studenti['cognome'] . "\n";
-   echo "Età: " . $dati_studenti['età'] . " anni\n";
+   echo "Nome: " . $dati_studente['nome'] . "\n";
+   echo "Cognome: " . $dati_studente['cognome'] . "\n";
+   echo "Età: " . $dati_studente['età'] . " anni\n";
    ?>
 </body>
 </html>
