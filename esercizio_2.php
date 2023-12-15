@@ -7,13 +7,13 @@
 </head>
 <body>
    <?php
-    $votiStudenti = array(
+    $votiStudenti = [
         'mario' => 8,
         'marco' => 4,
         'simone' => 9,
         'gabriele' => 9,
-    );
-    
+    ];
+        
     // Calcolo della media dei voti
     $totaleVoti = array_sum($votiStudenti);
     $numeroStudenti = count($votiStudenti);
