@@ -10,10 +10,10 @@
 
         // Dichiarazione dell'array associativo di studenti (matricola => nome)
         $studenti = [
-            'A123' => 'Mario Rossi',
-            'B456' => 'Luca Bianchi',
-            'C789' => 'Anna Verdi',
-            'D012' => 'Giovanni Neri',
+            'A123' => 'mario',
+            'B456' => 'marco',
+            'C789' => 'simone',
+            'D012' => 'gabriele',
         ];
 
         // Stampa lo stato iniziale
