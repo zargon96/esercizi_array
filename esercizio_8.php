@@ -13,7 +13,6 @@
             'prodotto3' => 8,
         ];
 
-        // Stampa lo stato iniziale
         echo "Stato iniziale degli stock:\n";
         foreach ($prodotti as $codice => $quantita) {
             echo "$codice: $quantita\n";

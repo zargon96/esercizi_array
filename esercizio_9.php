@@ -23,13 +23,12 @@
             12 => 'Dicembre',
         ];
 
-        // Stampa lo stato iniziale
         echo "Stato iniziale dei mesi:\n";
         foreach ($mesi as $numero => $nome) {
             echo "$numero: $nome\n";
         }
 
-        // Ordina l'array associativo in modo crescente rispetto ai valori (i nomi dei mesi)
+        //asort ordina l'array associativo in modo crescente rispetto ai valori in questo caso:(i nomi dei mesi)
         asort($mesi);
 
         // Stampa lo stato ordinato
