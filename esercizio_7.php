@@ -9,9 +9,7 @@
     <?php
 
         function formattaNumero($numero) {
-            // Arrotonda il numero a 2 cifre decimali
-            $numero = round($numero, 2);
-            return number_format($numero, 2, ",", ".");
+            return number_format($numero, 0, ",", "'");
         }
 
         $città = [

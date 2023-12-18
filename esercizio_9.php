@@ -9,6 +9,7 @@
     <?php
 
         $mesi = [
+            12 => 'Dicembre',
             1 => 'Gennaio',
             2 => 'Febbraio',
             3 => 'Marzo',
@@ -20,7 +21,6 @@
             9 => 'Settembre',
             10 => 'Ottobre',
             11 => 'Novembre',
-            12 => 'Dicembre',
         ];
 
         echo "Stato iniziale dei mesi:\n";

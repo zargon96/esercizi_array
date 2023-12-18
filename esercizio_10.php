@@ -9,26 +9,17 @@
     <?php
 
         $studenti = [
-            'A123' => 'mario',
+            'A123' => ['nome'=>'mario','cognome'=>'rossi'],
             'B456' => 'marco',
             'C789' => 'simone',
             'D012' => 'gabriele',
         ];
-  
-        echo "Stato iniziale degli studenti:\n";
-        foreach ($studenti as $matricola => $nome) {
-            echo "$matricola: $nome\n";
-        }
+
 
         //ksort Ordina l'array associativo in modo alfabetico rispetto alle chiavi in questo caso:(le matricole)
         ksort($studenti);
 
-        // Stampa lo stato ordinato
-        echo "\nStato ordinato degli studenti:\n";
-        foreach ($studenti as $matricola => $nome) {
-            echo "$matricola: $nome\n";
-        }
-
+        var_dump($studenti['A123']['nome'], $studenti['A123']['cognome']);exit();
     ?>
 
 </body>
