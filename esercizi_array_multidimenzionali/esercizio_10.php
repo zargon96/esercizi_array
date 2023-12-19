@@ -20,11 +20,16 @@
             ],
         ];
 
-        foreach($negozi as $chiave => $valore){
-            echo "negozio:<br> " . $chiave . "<br>";
-            foreach ($valore as $chiave => $via) {
-                echo "via: " . $via . "<br>";
+        
+        // $row = $negozi['milano']['negozio_1'];
+        // echo $row;exit();
+
+        foreach($negozi as $citta => $negozio){
+            echo "città:<br> " . $citta . "<br>";
+            foreach ($negozio as $nome => $via) {
+                echo "nome: " . $nome . "<br> via: " . $via . "<br>";
             }
+            echo "<br>";
         }
     ?>
 
