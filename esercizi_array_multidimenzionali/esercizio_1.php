@@ -6,7 +6,7 @@
     <title>esercizio_1</title>
 </head>
 <body>
-    <h1>Scrivere un programma PHP che dichiara una matrice multidimensionale di numeri e la stampa.</h1>
+    <h5>Scrivere un programma PHP che dichiara una matrice multidimensionale di numeri e la stampa.</h5>
     <?php
 
         $matrice = [
@@ -14,7 +14,8 @@
             [4, 5, 6],
             [7, 8, 9],
         ];
-            
+        $row = $matrice[1][1];
+        print_r($row);exit;
         echo "Matrice multidimensionale:\n";
         foreach ($matrice as $riga) {
             foreach ($riga as $elemento) {
