@@ -7,6 +7,7 @@
 </head>
 <body>
     <h3>Scrivere un programma PHP che dichiara una matrice multidimensionale di studenti (classe => [matricola => nome]) e stampa i nomi degli studenti per ogni classe.</h3>
+    <h5>modifica aggiungere la funzione che restituisca i nomi e cognomi ripetuti se ci sono.</h5>
     <?php
         function contaElementiRipetuti($array, $chiave) {
             $contatore = [];
