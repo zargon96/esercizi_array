@@ -18,7 +18,7 @@
                     if (isset($contatore[$valore])) {
                         $contatore[$valore]++;
                     } else {
-                        $contatore[$valore] = 1;
+                        $contatore[$valore] = 0;
                     }
                 }
             }
@@ -29,7 +29,7 @@
         function stampaElementiRipetuti($contatore, $chiave) {
             echo "Risultati per $chiave ripetuti:<br>";
             foreach ($contatore as $valore => $conteggio) {
-                if ($conteggio > 1) {
+                if ($conteggio > 0) {
                     echo "$valore: $conteggio<br>";
                 }
             }
@@ -42,7 +42,7 @@
                 3 => ['nome' => 'gervasio', 'cognome' => 'giallo'],
                 4 => ['nome' => 'pippo', 'cognome' => 'viola'],
             ],
-            
+
             'classe B' => [
                 1 => ['nome' => 'marco', 'cognome' => 'rossi'],
                 2 => ['nome' => 'giovanni', 'cognome' => 'blu'],
