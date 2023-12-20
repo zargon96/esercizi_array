@@ -25,6 +25,9 @@
             ]
         ];
 
+        // $row = $classi['classe A'][1];
+        // echo $row;exit; 
+
         foreach ($classi as $classe => $studenti) {
             echo "classe: " . $classe . "<br>";
             foreach ($studenti as $matricola => $nome) {

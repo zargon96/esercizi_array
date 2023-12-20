@@ -19,6 +19,10 @@
             'domenica' => [22,32],
         ];
 
+        // $row = $temperature['lunedi'][0];
+        // $row2 = $temperature['lunedi'][1];
+        // print_r($row . "\n". $row2);exit;
+
         foreach ($temperature as $chiave => $valore) {
             $media = array_sum($valore) / count($valore);
             echo "Giorno: " . $chiave . ", Temperatura media: " . $media . "<br>";

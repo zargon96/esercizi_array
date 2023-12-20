@@ -32,6 +32,12 @@
             ]
         ];
 
+       
+        // $cucina = $prodotti['cucina'];
+        // $primo_prodotto = $cucina[0]['nome'];
+
+        // echo $primo_prodotto;exit;
+
         echo "Prodotti per categoria:\n";
         foreach ($prodotti as $categoria => $listaProdotti) {
             echo "$categoria:\n";
