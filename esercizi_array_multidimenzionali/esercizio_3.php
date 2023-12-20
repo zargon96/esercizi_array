@@ -15,6 +15,10 @@
           'ILMN' => ["Nome" => "Luca", "Cognome" => "Bianchi", "Età" => 28],
         ];
 
+        // $row = $dati_personali['ABCD'];
+        // $primo_dato = $row['Età'];
+        // echo $primo_dato;exit;
+
         echo "Dati personali:\n";
         foreach ($dati_personali as $matricola => $persona) {
             echo "matricola: $matricola Nome: " . $persona["Nome"] . ", Cognome: " . $persona["Cognome"] . ", Età: " . $persona["Età"] . "\n";

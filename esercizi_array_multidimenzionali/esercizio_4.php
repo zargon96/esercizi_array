@@ -15,6 +15,10 @@
             'ILMN' => ["Nome" => "Luca", "Cognome" => "Bianchi", "Voti" => [30, 18, 25]],
         ];
 
+        // $row = $studenti['ABCD'];
+        // $primo_studente = $row['Voti'][0];
+        // echo $primo_studente;exit;
+
         echo "Dati personali e media dei voti degli studenti:\n";
         foreach ($studenti as $matricola => $studente) {
             echo "Matricola: $matricola\n";

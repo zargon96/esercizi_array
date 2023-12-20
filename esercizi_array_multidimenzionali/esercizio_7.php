@@ -15,6 +15,9 @@
             'ILMN' => ["nome" => "luca", "cognome" => "bianchi",],
         ];
 
+        // $row = $studenti['ABCD'];
+        // $primo_studente = $row["nome"];
+        // echo $primo_studente;exit;
 
         $matricola_da_cercare = 'EFGH';
 
