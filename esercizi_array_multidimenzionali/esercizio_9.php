@@ -8,34 +8,57 @@
 <body>
     <h3>Scrivere un programma PHP che dichiara una matrice multidimensionale di studenti (classe => [matricola => nome]) e stampa i nomi degli studenti per ogni classe.</h3>
     <?php
+        function contaElementiRipetuti($array, $chiave) {
+            $contatore = [];
+
+            foreach ($array as $studenti) {
+                foreach ($studenti as $studente) {
+                    $valore = $studente[$chiave];
+
+                    if (isset($contatore[$valore])) {
+                        $contatore[$valore]++;
+                    } else {
+                        $contatore[$valore] = 1;
+                    }
+                }
+            }
+
+            return $contatore;
+        }
+
+        function stampaElementiRipetuti($contatore, $chiave) {
+            echo "Risultati per $chiave ripetuti:<br>";
+            foreach ($contatore as $valore => $conteggio) {
+                if ($conteggio > 1) {
+                    echo "$valore: $conteggio<br>";
+                }
+            }
+        }
 
         $classi = [
             'classe A' => [
-                1 => 'marco',
-                2 => 'mario',
-                3 => 'simone',
-                4 => 'gabriele',
+                1 => ['nome' => 'marco', 'cognome' => 'rossi'],
+                2 => ['nome' => 'mario', 'cognome' => 'verdi'],
+                3 => ['nome' => 'gervasio', 'cognome' => 'giallo'],
+                4 => ['nome' => 'pippo', 'cognome' => 'viola'],
             ],
-
+            
             'classe B' => [
-                1 => 'marco',
-                2 => 'mario',
-                3 => 'simone',
-                4 => 'gabriele',
+                1 => ['nome' => 'marco', 'cognome' => 'rossi'],
+                2 => ['nome' => 'giovanni', 'cognome' => 'blu'],
+                3 => ['nome' => 'gervasio', 'cognome' => 'nero'],
+                4 => ['nome' => 'lorenzo', 'cognome' => 'bianco'],
             ]
         ];
 
-        // $row = $classi['classe A'][1];
-        // echo $row;exit; 
+        $nomi_contati = contaElementiRipetuti($classi, 'nome');
+        $cognomi_contati = contaElementiRipetuti($classi, 'cognome');
 
-        foreach ($classi as $classe => $studenti) {
-            echo "classe: " . $classe . "<br>";
-            foreach ($studenti as $matricola => $nome) {
-                echo "Matricola: " . $matricola . ", Nome: " . $nome . "<br>";
-            }
-            echo "<br>";
-        }
+        stampaElementiRipetuti($nomi_contati, 'nome');
+        stampaElementiRipetuti($cognomi_contati, 'cognome');
     ?>
+
+
 
 
 </body>
